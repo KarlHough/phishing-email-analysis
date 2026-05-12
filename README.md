@@ -74,6 +74,13 @@ The domain `suksapan.or.th` is a legitimate, long-established Thai organisationa
 This finding changes the threat assessment significantly. Rather than domain spoofing, the evidence points to a **compromised legitimate email account**. An attacker likely gained unauthorised access to the `shore@suksapan.or.th` account and is using it to send scam emails. Using a legitimate aged domain helps the email bypass spam filters, as the sending domain has an established reputation.
 
 ---
+IP Reputation Analysis
+The origin IP 102.69.139.111 was submitted to VirusTotal for reputation analysis.
+
+![virustotal](screenshots/virustotal.png)
+
+Result: No vendors flagged this IP as malicious at the time of analysis.
+Assessment: A clean VirusTotal result does not confirm the IP is benign. VirusTotal reflects community-reported detections and newly used IPs — particularly those belonging to compromised legitimate infrastructure — frequently return clean results. This is consistent with the assessment that the sending account was compromised rather than operated from known malicious infrastructure. The IP should still be monitored and blocked at the email gateway as a precautionary measure.
 
 ## Email Body Analysis
 
